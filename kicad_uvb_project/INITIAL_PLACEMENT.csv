@@ -1,0 +1,15 @@
+ref,x_mm,y_mm,rotation_deg,side,notes
+J1,10,30,90,Top,AC inlet or terminal at enclosure edge
+F1,25,44,0,Top,Fuse near AC entry
+SW1,25,54,0,Top,Main switch near user-accessible edge
+K1,45,40,90,Top,Mechanical relay in AC zone
+U4,70,40,0,Top,Ballast wiring abstraction or terminal area
+J2,90,40,0,Top,G23 socket lead terminal
+U5,45,18,0,Top,Isolated 5V supply with AC/LV separation
+U2,80,18,0,Top,XIAO RP2040 low-voltage area
+Q1,65,20,0,Top,NPN relay driver
+R1,58,20,0,Top,Relay driver base resistor
+D1,52,30,0,Top,Flyback diode near relay coil pins
+RV1,20,18,0,Top,MOV across protected L-N with safe spacing
+C1,20,10,0,Top,X2 capacitor across protected L-N with safe spacing
+M1,90,18,0,Top,Optional 5V fan connector

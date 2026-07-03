@@ -1,0 +1,21 @@
+Equivalent mechanical CAD model for integration only.
+
+File: Fan_80x80x38_equivalent.step
+Created: 2026-05-10
+Method: Generated in FreeCAD from standard 80x80x38 mm AC fan dimensions.
+
+Reference used:
+- BOM target part: NMB 08038PB-A1L-EA-00
+- Public datasheet (mechanical dimensions):
+  https://nmbtc.com/wp-content/uploads/parts/spec-sheets/08038PB-A1L-EA-00_60Hz.pdf
+
+Modeled assumptions:
+- External envelope: 80.0 x 80.0 x 38.0 mm
+- Mount hole pitch: 71.5 mm
+- Mount hole diameter: 4.5 mm
+- Simplified inlet opening and rear hub (non-functional geometry)
+
+Important:
+- This is NOT an official OEM 3D model.
+- Use for enclosure fit/pre-check only.
+- Do final validation against official manufacturer dimensions before fabrication.

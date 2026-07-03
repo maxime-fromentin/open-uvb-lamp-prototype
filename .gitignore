@@ -1,0 +1,39 @@
+# Local editor / agent state
+.code/
+.agents/
+.codex/
+github_publish/
+
+# Local tool installs and Arduino cache
+.tools/
+.arduino15/
+
+# Build outputs
+build_relay_test/
+*.elf
+*.bin
+*.map
+*.uf2
+
+# KiCad local/generated files
+*.lck
+*-backups/
+fp-info-cache
+*.bak
+*.kicad_prl
+.history
+
+# Publication keeps only the retained schematic PDF.
+output/pdf/uvb_controller_clean.pdf
+output/pdf/uvb_controller_protoboard_plan.pdf
+
+# Vendor/private artifacts to review before publishing
+datasheet/
+datasheet/Quote_*.pdf
+datasheet/dk_*.html
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*~
+*.FCBak

@@ -1,0 +1,26 @@
+net_name,from_ref,from_pin,to_ref,to_pin,notes
+AC_L_IN,J1,L,F1,1,Live enters fuse first
+AC_L_FUSED,F1,2,SW1,1,Main rocker switch input
+AC_L_SWITCHED,SW1,2,K1,COM,Relay common contact
+AC_L_RELAY_OUT,K1,NO,U4,L,Relay normally-open output to ballast live input
+AC_N_IN,J1,N,U4,N,Neutral to ballast input
+AC_PE_IN,J1,PE,CHASSIS,PE,Protective earth to accessible metal parts
+BALLAST_LAMP_1,U4,LAMP_1,J2,1,Ballast lamp output 1 to G23 socket
+BALLAST_LAMP_2,U4,LAMP_2,J2,2,Ballast lamp output 2 to G23 socket
+ACDC_L,J1,L,U5,AC_L,AC input to isolated 5V supply through protected mains path as implemented
+ACDC_N,J1,N,U5,AC_N,Neutral input to isolated 5V supply
+DC_5V,U5,+5V,U2,VBUS_5V,5V rail to XIAO and relay coil supply
+GND_LV,U5,GND,U2,GND,Low-voltage ground common
+RELAY_CMD,U2,GPIO28_A2_D2,R1,1,XIAO command to relay driver base resistor
+Q1_BASE,R1,2,Q1,B,Base drive for NPN transistor
+Q1_EMITTER,Q1,E,GND_LV,,NPN emitter to low-voltage ground
+RELAY_COIL_LOW,Q1,C,K1,A2,NPN sinks relay coil
+RELAY_COIL_HIGH,K1,A1,DC_5V,,Relay coil connected to 5V rail
+FLYBACK_DIODE,D1,K,K1,A1,Diode cathode/stripe to relay coil positive
+FLYBACK_DIODE,D1,A,K1,A2,Diode anode to relay coil low side
+FAN_5V,DC_5V,,M1,1,Optional low-voltage fan positive
+FAN_GND,GND_LV,,M1,2,Optional low-voltage fan return
+MOV_L,RV1,1,AC_L_FUSED,,MOV across protected Live-Neutral
+MOV_N,RV1,2,AC_N_IN,,MOV across protected Live-Neutral
+X2_CAP_L,C1,1,AC_L_FUSED,,X2 capacitor across protected Live-Neutral
+X2_CAP_N,C1,2,AC_N_IN,,X2 capacitor across protected Live-Neutral

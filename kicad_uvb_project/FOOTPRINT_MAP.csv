@@ -1,0 +1,15 @@
+ref,component,footprint_kicad,notes
+J1,IEC C14 AC inlet or terminal abstraction,Connector_Generic:Conn_01x03,Use panel-mounted rated inlet or equivalent wiring terminal
+F1,Panel or inline fuse holder,Fuse:Fuseholder_Clip-5x20mm,Choose holder matching the selected fuse and enclosure
+SW1,Panel rocker switch,Connector_Generic:Conn_01x02,Panel switch may be wired off-board
+K1,Omron G5Q-1A4 DC5 relay,Relay_THT:Relay_SPST_Omron-G5Q,Verify exact footprint before PCB fabrication
+J2,G23 lamp socket wiring terminal,TerminalBlock:TerminalBlock_1x02,Connection from ballast lamp outputs to socket leads
+U4,Electromagnetic ballast wiring abstraction,Connector_Generic:Conn_01x04,Represents ballast input and lamp output wiring
+U5,AC-DC 5V module or enclosed supply,Converter_ACDC:Converter_ACDC_MeanWell_IRM-10-5,Placeholder; verify selected power module footprint
+U2,Seeed XIAO RP2040 headers,Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical,Use two 1x7 socket strips
+Q1,2N3904 NPN transistor,Package_TO_SOT_THT:TO-92_Inline,Verify pinout against purchased transistor
+D1,1N4007 flyback diode,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,Across relay coil
+R1,1k base resistor,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm,1/4 W through-hole
+RV1,MOV 275VAC,Varistor:RV_Disc_D14mm_W5.1mm_P7.5mm,Verify lead spacing and safety rating
+C1,X2 safety capacitor,Capacitor_THT:C_Rect_L18.0mm_W5.0mm_P15.00mm,Verify X2 safety class and lead spacing
+M1,5V fan wiring terminal,Connector_Generic:Conn_01x02,Optional fan connector

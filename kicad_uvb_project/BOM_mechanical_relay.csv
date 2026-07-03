@@ -1,0 +1,15 @@
+reference,category,value,notes
+C1,Capacitor,100nF X2 275VAC,Mains safety capacitor across L-N after F1
+D1,Diode,1N4007,Flyback diode across relay coil
+F1,Fuse,Fuse,Mains input fuse on live
+J1,Connector,DAC-12S,IEC C14 AC input
+J2,Connector,G23_LampHolder_2pin,G23 lamp holder / socket
+K1,Relay,G5Q-1A4 DC5,Mechanical relay coil 5VDC SPST-NO
+M1,Fan,Fan,5V fan on low-voltage rail
+Q1,Transistor,2N3904,NPN relay driver transistor
+R1,Resistor,1k,Base resistor for Q1 from XIAO GPIO28_A2_D2
+RV1,Varistor,MOV 275VAC,Mains surge suppressor across L-N after F1
+SW1,Switch,Main_SW,Main AC switch
+U2,MCU,XIAO_RP2040_Seeed_14pin_v1,Main controller board/header
+U4,Ballast,Ballast_1xLamp_4pin,Ballast interface / terminal abstraction
+U5,ACDC,ACDC_5V_Module_4pin,AC-DC 5V module
