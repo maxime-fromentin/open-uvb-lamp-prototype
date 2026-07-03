@@ -4,6 +4,8 @@ Prototype narrowband UVB lamp using a Philips PL-S 9W/01/2P lamp, a G23 electrom
 
 The project is documented in the context of localized narrowband UVB exposure research for psoriasis-related prototyping. It is not medical advice and does not claim to treat, cure, or diagnose psoriasis.
 
+The photos and videos in this README are presentation assets for the physical prototype and its assembly. They are included for documentation and inspection only.
+
 ![CAD model](docs/media/cad_lamp.png)
 
 | Prototype handling | Visible lamp test |
@@ -26,6 +28,8 @@ The KiCad schematic is mainly a wiring and soldering aid for understanding the p
 
 KiCad ERC/DRC checks can catch some connection errors, but they do not validate safety with mains voltage, ballasts, UVB lamps, or therapeutic use.
 
+This repository is intended for documentation and private technical reference. It is not a certification file, a warranty of safety, or a substitute for qualified electrical, mechanical, or medical review.
+
 ## Burn-Risk Control Features
 
 The prototype is designed around the idea that UVB exposure must be time-limited, distance-aware, and measured. These controls are intended to reduce burn risk, but they do not make the device medically safe by themselves:
@@ -39,6 +43,8 @@ The prototype is designed around the idea that UVB exposure must be time-limited
 - **Required UV measurement:** actual UVB irradiance must be measured with a suitable meter before any exposure assumptions are made.
 
 These features are engineering risk controls, not a treatment protocol. Dose limits, exposure schedules, and suitability for psoriasis phototherapy require qualified medical guidance.
+
+The media in this README show the prototype as built, including the FreeCAD enclosure, the visible non-UV test lamp, and the electrical layout. They are not proof of safety or clinical suitability.
 
 ## Retained Design
 
