@@ -20,9 +20,7 @@ Electrical schematic overview in KiCad. The schematic is provided as a wiring an
 
 ## Critical Warning
 
-This project combines 120 VAC mains voltage with a UVB source. UVB exposure can cause skin burns, eye injury, and long-term tissue damage. Mains voltage can kill. Do not reproduce this build without electrical competence, UV-opaque enclosure design, protective earth bonding, fusing, mechanical isolation, mains-to-low-voltage spacing, certified eye protection, and real UV output measurements.
-
-Psoriasis phototherapy protocols should be set by qualified medical professionals. This prototype documentation is for technical transparency only.
+This project combines 120 VAC mains voltage with a UVB source. UVB exposure can cause skin burns, eye injury, and long-term tissue damage. Mains voltage can kill.
 
 The KiCad schematic is mainly a wiring and soldering aid for understanding the prototype. It is not a complete electrical simulation, a regulatory validation, a medical validation, or proof that the device is safe.
 
