@@ -28,6 +28,20 @@ The KiCad schematic is mainly a wiring and soldering aid for understanding the p
 
 KiCad ERC/DRC checks can catch some connection errors, but they do not validate safety with mains voltage, ballasts, UVB lamps, or therapeutic use.
 
+## Burn-Risk Control Features
+
+The prototype is designed around the idea that UVB exposure must be time-limited, distance-aware, and measured. These controls are intended to reduce burn risk, but they do not make the device medically safe by themselves:
+
+- **Relay-controlled shutoff:** the lamp power path is switched by a mechanical relay so the controller can interrupt exposure.
+- **Default-off firmware behavior:** the test firmware drives the relay OFF at boot and only turns it ON after an explicit command.
+- **Short timed pulse during tests:** the current relay test firmware limits `on` and `pulse` commands to 5 seconds.
+- **Physical shielding:** the enclosure concept is intended to block stray UV and expose only the target area.
+- **Distance control concept:** a fixed distance guide or visual distance reference should be used because UV dose changes strongly with distance.
+- **Cooling and thermal checks:** ventilation and temperature checks are part of the prototype notes because lamp temperature can affect output and enclosure safety.
+- **Required UV measurement:** actual UVB irradiance must be measured with a suitable meter before any exposure assumptions are made.
+
+These features are engineering risk controls, not a treatment protocol. Dose limits, exposure schedules, and suitability for psoriasis phototherapy require qualified medical guidance.
+
 ## Retained Design
 
 The retained design is the mechanical-relay schematic:
