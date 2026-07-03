@@ -2,6 +2,8 @@
 
 Prototype narrowband UVB lamp using a Philips PL-S 9W/01/2P lamp, a G23 electromagnetic ballast, and a mechanical relay controlled by a Seeed XIAO RP2040.
 
+![CAD model](docs/media/cad_lamp.png)
+
 ![Prototype demo](docs/media/demo.gif)
 
 > Project status: documented prototype. This repository is not a safety certification, a validated medical device, or a build guide for unqualified users.
@@ -34,6 +36,20 @@ Older schematic variants are kept in `kicad_uvb_project/uvb_controller/archive/`
 - `SAFETY.md`: essential safety notes.
 - `digikey_bom_clean.csv`: public supplier-oriented BOM with personal sourcing links removed.
 - `docs/media/`: README media assets, including the demo GIF.
+
+## Reproducing the Prototype
+
+The repository includes the core files needed to inspect and reproduce the documented prototype:
+
+- Mechanical design: `CAD/lampe.FCStd`, `CAD/CadLampe.FCStd`, `CAD/Fan_80x80x38_equivalent.step`, and `CAD/G23_lamp_dimensions.md`.
+- Electrical wiring reference: `kicad_uvb_project/uvb_controller/uvb_controller_mechanical_relay.kicad_sch` and `output/pdf/uvb_controller_mechanical_relay.pdf`.
+- KiCad custom symbols: `kicad_uvb_project/uvb_controller/uvb_custom.kicad_sym`.
+- Parts list: `digikey_bom_clean.csv` and `kicad_uvb_project/BOM_mechanical_relay.csv`.
+- Firmware: `sketch_relay_test/sketch_relay_test.ino`.
+- Firmware test notes: `XIAO_RELAY_TEST_SOFTWARE.md`.
+- Safety notes: `SAFETY.md`.
+
+Vendor datasheets are referenced by URL in the BOM rather than copied into the repository.
 
 ## Firmware Test
 
