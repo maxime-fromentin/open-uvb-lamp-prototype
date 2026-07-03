@@ -12,6 +12,10 @@ The project is documented in the context of localized narrowband UVB exposure re
 
 The illuminated lamp shown above is a visible, non-UV G23 test lamp used to verify fit, wiring behavior, and demonstration footage without UV exposure.
 
+![Electrical schematic overview](docs/media/electric.png)
+
+Electrical schematic overview in KiCad. The schematic is provided as a wiring and soldering reference, not as a certified electrical validation.
+
 > Project status: documented prototype. This repository is not a safety certification, a validated medical device, or a build guide for unqualified users.
 
 ## Critical Warning
