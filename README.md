@@ -104,10 +104,6 @@ Before any mains or UVB test, document at least:
 - UVB irradiance measurement with a suitable meter;
 - ideally, a 250-400 nm spectral measurement.
 
-## Contributors
-
-See `CONTRIBUTORS.md`.
-
 ## License
 
 See `LICENSE.md`.
