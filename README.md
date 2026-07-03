@@ -6,7 +6,11 @@ The project is documented in the context of localized narrowband UVB exposure re
 
 ![CAD model](docs/media/cad_lamp.png)
 
-![Prototype demo](docs/media/demo.gif)
+| Prototype handling | Visible lamp test |
+| --- | --- |
+| ![Prototype handling demo](docs/media/demo.gif) | ![Visible non-UV lamp test](docs/media/visible_lamp_test.gif) |
+
+The illuminated lamp shown above is a visible, non-UV G23 test lamp used to verify fit, wiring behavior, and demonstration footage without UV exposure.
 
 > Project status: documented prototype. This repository is not a safety certification, a validated medical device, or a build guide for unqualified users.
 
