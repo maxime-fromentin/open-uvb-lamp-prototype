@@ -1,6 +1,8 @@
 # Open UVB Lamp Prototype
 
-Prototype narrowband UVB lamp using a Philips PL-S 9W/01/2P lamp, a G23 electromagnetic ballast, and a mechanical relay controlled by a Seeed XIAO RP2040.
+Prototype narrowband UVB lamp using a Philips PL-S 9W/01/2P lamp, a G23 electromagnetic ballast, a FreeCAD-designed enclosure, and a mechanical relay controlled by a Seeed XIAO RP2040.
+
+The project is documented in the context of localized narrowband UVB exposure research for psoriasis-related prototyping. It is not medical advice and does not claim to treat, cure, or diagnose psoriasis.
 
 ![CAD model](docs/media/cad_lamp.png)
 
@@ -11,6 +13,8 @@ Prototype narrowband UVB lamp using a Philips PL-S 9W/01/2P lamp, a G23 electrom
 ## Critical Warning
 
 This project combines 120 VAC mains voltage with a UVB source. UVB exposure can cause skin burns, eye injury, and long-term tissue damage. Mains voltage can kill. Do not reproduce this build without electrical competence, UV-opaque enclosure design, protective earth bonding, fusing, mechanical isolation, mains-to-low-voltage spacing, certified eye protection, and real UV output measurements.
+
+Psoriasis phototherapy protocols should be set by qualified medical professionals. This prototype documentation is for technical transparency only.
 
 The KiCad schematic is mainly a wiring and soldering aid for understanding the prototype. It is not a complete electrical simulation, a regulatory validation, a medical validation, or proof that the device is safe.
 
@@ -29,7 +33,7 @@ Older schematic variants are kept in `kicad_uvb_project/uvb_controller/archive/`
 
 ## Repository Contents
 
-- `CAD/`: FreeCAD files, STEP model, and mechanical reference images.
+- `CAD/`: FreeCAD source files, STEP model, and mechanical reference images.
 - `kicad_uvb_project/`: KiCad schematic, relay BOM, placement notes, and connection maps.
 - `sketch_relay_test/`: XIAO RP2040 relay test firmware.
 - `XIAO_RELAY_TEST_SOFTWARE.md`: compile, flash, and serial test notes.
@@ -41,7 +45,7 @@ Older schematic variants are kept in `kicad_uvb_project/uvb_controller/archive/`
 
 The repository includes the core files needed to inspect and reproduce the documented prototype:
 
-- Mechanical design: `CAD/lampe.FCStd`, `CAD/CadLampe.FCStd`, `CAD/Fan_80x80x38_equivalent.step`, and `CAD/G23_lamp_dimensions.md`.
+- Mechanical design in FreeCAD: `CAD/lampe.FCStd`, `CAD/CadLampe.FCStd`, `CAD/Fan_80x80x38_equivalent.step`, and `CAD/G23_lamp_dimensions.md`.
 - Electrical wiring reference: `kicad_uvb_project/uvb_controller/uvb_controller_mechanical_relay.kicad_sch` and `output/pdf/uvb_controller_mechanical_relay.pdf`.
 - KiCad custom symbols: `kicad_uvb_project/uvb_controller/uvb_custom.kicad_sym`.
 - Parts list: `digikey_bom_clean.csv` and `kicad_uvb_project/BOM_mechanical_relay.csv`.

@@ -1,8 +1,10 @@
 # Project Concept
 
-The goal is to document a DIY narrowband UVB lamp prototype based on a Philips PL-S 9W/01/2P lamp. The design aims to capture practical CAD, wiring, BOM, safety, and test notes so that another technically competent person can understand the build.
+The goal is to document a DIY narrowband UVB lamp prototype based on a Philips PL-S 9W/01/2P lamp. The design aims to capture practical FreeCAD files, wiring, BOM, safety, and test notes so that another technically competent person can understand the build.
 
 This is not a finished medical device. The main value of the repository is transparency: mechanical files, wiring intent, BOM choices, test firmware, and safety assumptions are kept together.
+
+The project is documented in a psoriasis-related prototyping context because narrowband UVB is commonly associated with clinical phototherapy. This repository does not provide a treatment protocol and does not claim medical efficacy.
 
 ## Target Lamp
 
